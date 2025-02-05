@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content=
+        "width=device-width,initial-scale=1.0">
+    <title>Floating Box</title>
+    <style>
+        body {
+            background: green;
+        }
+        h1 {
+            display:flex;
+            justify-content: center;
+            color: white;
+            font-size: 40px;                    
+            }
+ 
+        .geeks {
+            width:400px;
+            height:250px;
+            background: white;
+            position: absolute;
+            top:16%;
+            left:35%;
+            border-radius: 20px;
+        }
+ 
+        .geeks::after {
+            content: "";
+            position: absolute;
+            bottom: -30px;
+            background: rgb(43, 42, 42);
+            width: 90%;
+            height:4px;
+            left:3%;
+            border-radius:50%;
+            filter: blur(3px);
+        }
+    </style>
+</head>
+ 
+<body>
+    <h1>GeeksForGeeks</h1>
+    <div class="geeks"></div>
+</body>
+ 
+</html>
